@@ -1,7 +1,7 @@
 #!/bin/bash
 
-git clone https://github.com/frozenpandaman/splatnet2statink.git
-cat config_template.txt | envsubst > splatnet2statink/config.txt
-cd splatnet2statink || exit
+git clone https://github.com/frozenpandaman/s3s.git
+cat config_template.txt | envsubst > s3s/config.txt
+cd s3s || exit
 pip install -r requirements.txt
-python splatnet2statink.py -r
+python s3s.py -r
